@@ -87,3 +87,6 @@ Note that you cannot use `--buildtype=debug` as FFmpeg will fail to compile with
 
 There are pre-built binaries for Windows available from the releases section.
 Simply place aegisub-cli.exe in the same directory as your main Aegisub executable and add the directory to your PATH.
+
+## Docker
+The base image is available on docker: `n01d3a/aegisub-cli:1.0`

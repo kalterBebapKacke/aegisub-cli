@@ -21,7 +21,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 # ---- Build aegisub-cli ----
 RUN python3 -m pip install meson==0.62 # Downgrade Meson due to sandbox violation (known issue)
 WORKDIR /build
-COPY ./src/fs.cpp /tmp/fs.cpp
+COPY ./docker-src/fs.cpp /tmp/fs.cpp
 RUN git clone https://github.com/Myaamori/aegisub-cli \
     && cd ./aegisub-cli \
     && rm libaegisub/common/fs.cpp \
@@ -87,7 +87,7 @@ WORKDIR ${HOME}/.aegisub/automation
 
 # ---- Copy Input Script ----
 WORKDIR /home
-COPY ../input.ass .
+COPY ../docker-src/input.ass .
 
 WORKDIR /home
 # ---- Install aegisub ----
