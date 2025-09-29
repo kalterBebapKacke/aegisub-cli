@@ -59,6 +59,8 @@ $ ninja -C builddir src/aegisub-cli
 The prefix should be set to the same prefix as your main Aegisub installation, as this is where Aegisub CLI will search for automation modules.
 Note however that you do not need to install the actual binary itself to the same directory.
 
+Important: With the current meson version, building is no longer possible. If you still want to use aegisub-cli, it is adviced to use the docker image.
+
 ### Windows
 
 Install Visual Studio 2019, Python 3, Meson and Ninja, open the `x64 Native Tools Command Prompt for VS 2019`, run
