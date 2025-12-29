@@ -90,3 +90,4 @@ Simply place aegisub-cli.exe in the same directory as your main Aegisub executab
 
 ## Docker
 The base image is available on docker: `n01d3a/aegisub-cli:1.0`
+A basic image with `Shapery` installed is available under `n01d3a/aegisub-cli:Shapery`
